@@ -1,8 +1,8 @@
-entreekosten = 7.45
-vipVR = 0.37/5
-deeltijd = 45
-personen = 3
-factuurkosten = 'dit geweldige dagje uit met 4 mensen in de peelhal met 45 minuten VR kost je maar ' + str((personen) * (entreekosten) + (deeltijd) * (vipVR)) + ' euro'
+aantalPersonen = float(input('aantal personen '))
+kostenPersonen = 7.45
+vipVr = float(input('aantal minuten '))
+kostenVr = 0.37
+factuurkosten = 'dit geweldige dagje uit in de speelhal met of zonder vip VR Game Seat kost je maar ' + str((aantalPersonen) * (kostenPersonen) + (vipVr) / 5 * (kostenVr)) + ' euro'
 
 print(factuurkosten)
 
